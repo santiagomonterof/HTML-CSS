@@ -1,6 +1,6 @@
 # HTML-CSS
 
-It has an acceptable responsive
+The pages have an acceptable responsiveness
 
 ## PARADISE
 ![PARADISE](https://github.com/santiagomonterof/HTML-CSS/assets/108990849/5e4b5aca-64d9-457d-a007-e6b14edd68c1)
