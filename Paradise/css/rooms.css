@@ -1,0 +1,43 @@
+.rooms__item {
+    padding: 30px;
+}
+
+.rooms__projects__img {
+    width: 100%;
+}
+
+.rooms__item__title {
+    font-weight: normal;
+    margin: 10px 0px 10px;
+    color: #373535;
+    font-size: 19px;
+}
+
+.rooms__item p {
+    font-weight: 100;
+    color: #373535;
+    font-size: 12px;
+}
+
+@media (min-width: 426px) {
+
+
+    .rooms__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rooms__item {
+        width: 294px;
+    }
+
+    .rooms__item__title {
+        font-size: 20px;
+    }
+
+    .rooms__item p {
+        font-size: 13px;
+    }
+
+}

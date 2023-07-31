@@ -1,0 +1,124 @@
+.work__title {
+    display: block;
+    margin: 25px;
+}
+
+.work__title__text {
+    font-size: 24px;
+    color: #474747;
+    font-family: 'Bebas', sans-serif;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.work__title__label {
+    width: 100%;
+    height: 30px;
+    background-image: url(img/title-bg.png);
+    background-repeat: repeat;
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.work__item {
+    width: 216px;
+    margin-bottom: 20px;
+    margin: 10px;
+    background-color: rgba(235, 235, 235, 0.977);
+    border: 6px solid;
+}
+
+.work__item__title {
+    display: flex;
+    justify-content: center;
+}
+
+.work__item p {
+    margin: 20px;
+}
+
+.work__projects__img {
+    width: 100%;
+    padding: 5px;
+}
+
+.work__item__details {
+    font-family: 'Bebas', sans-serif;
+    text-decoration: none;
+    color: #474747;
+    font-size: 15px;
+}
+
+.work__item__details i {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+    .work {
+        margin-top: 67px;
+        margin-bottom: 70px;
+        
+    }
+
+    .work__title {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        margin-bottom: 55px;
+    }
+
+    .work__title__text {
+        font-size: 24px;
+        color: #474747;
+        font-family: 'Bebas', sans-serif;
+        margin: 1px;
+        display: inherit;
+    }
+
+    .work__title__label {
+        width: 370px;
+        height: 30px;
+        background-image: url(img/title-bg.png);
+        background-repeat: repeat;
+    }
+
+    .work__projects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: inherit;
+    }
+
+    .work__item {
+        width: 220px;
+        margin-bottom: 17px;
+        margin: 0;
+        background-color: inherit;
+        border: 0;
+    }
+
+    .work__projects__img {
+        width: 220px;
+        padding: 0;
+    }
+
+    .work__item__title {
+        font-size: 18px;
+        font-family: 'Bebas', sans-serif;
+        font-weight: normal;
+        display: inherit;
+        justify-content: inherit;
+    }
+
+    .work__item p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}

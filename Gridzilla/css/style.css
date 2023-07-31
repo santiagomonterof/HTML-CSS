@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeue', sans-serif;
+}
+
+.main {
+    background-color: white;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .main {
+        width: 940px;
+    }
+}

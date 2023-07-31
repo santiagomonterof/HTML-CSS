@@ -1,0 +1,119 @@
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__top__title {
+    font-family: 'ChunkFive', sans-serif;
+    margin: 31px 0px;
+}
+
+.nav__top__title strong {
+    color: red;
+}
+
+.nav__top__search {
+    margin: 31px 0px 36px;
+    position: relative;
+}
+
+.nav__top__space {
+    width: 200px;
+    height: 31px;
+    font-size: 12px;
+    border: 1px solid #efefef;
+    color: #efefef;
+    padding-left: 12px;
+    background-color: white;
+}
+
+.nav__top__icon {
+    position: absolute;
+    display: block;
+    bottom: 0.41rem;
+    right: 1rem;
+    user-select: none;
+    cursor: pointer;
+    color: #efefef;
+}
+
+
+.nav__bot {
+    border-top: 1px solid #efefef;
+    position: relative;
+}
+
+.nav__bot__item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 38px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.line {
+    position: absolute;
+    border-top: 1px solid red;
+    width: 68px;
+    height: 0px;
+    padding: 0;
+    top: -1px;
+}
+
+.nav__bot__item:nth-child(2) {
+    color: red;
+}
+
+.nav__bot__line {
+    color: #efefef;
+}
+
+@media (max-width:425px) {
+    .nav__top__search {
+        display: none;
+    }
+
+    .nav__top {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__bot {
+        border-top: 0;
+        position: inherit;
+        padding: 1px 0px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav__bot__item {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        height: 25px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        margin: 5px 0px;
+        border-bottom: 1px solid #e6e4e4;
+    }
+
+    .nav__bot__line {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .nav__top__title {
+        margin-left: 10px;
+    }
+    .nav__top__search {
+        margin-right: 10px;
+    }
+}

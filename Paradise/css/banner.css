@@ -1,0 +1,26 @@
+.banner {
+    position: relative;
+}
+
+.banner__container__img {
+    width: 100%;
+}
+
+.banner__container__arrow {
+    position: absolute;
+    color: white;
+    font-size: 4vw;
+    opacity: 0.7;
+    top: 48%;
+}
+
+.banner__container__arrow:nth-child(2) {
+    right: 0px;
+    margin-right: 10px;
+}
+
+.banner__container__arrow:nth-child(3) {
+    left: 0px;
+    margin-left: 10px;
+}
+

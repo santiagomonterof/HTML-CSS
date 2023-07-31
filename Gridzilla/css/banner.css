@@ -1,0 +1,29 @@
+.banner {
+    height: 507px;
+}
+
+.banner__container {
+    position: relative;
+}
+
+.banner__img {
+    position: absolute;
+    width: 103%;
+    left: -12px;
+}
+
+@media (max-width:768px) {
+    .banner {
+        height: auto;
+    }
+
+    .banner__container {
+        position: inherit;
+    }
+
+    .banner__img {
+        position: inherit;
+        width: 100%;
+    }
+
+}

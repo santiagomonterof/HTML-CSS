@@ -1,0 +1,16 @@
+.btns__container {
+    margin: 51px 0px;
+}
+
+.btns__container input {
+    margin-right: 5px;
+    padding: 9px 10px;
+    font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .btns__container {
+        display: flex;
+        justify-content: center;
+    }
+}

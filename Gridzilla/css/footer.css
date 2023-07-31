@@ -1,0 +1,36 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    height: 82px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.footer__text p {
+    text-align: end;
+    margin-top: 0px;
+}
+
+.footer__text:nth-child(1) {
+    font-size: 12px;
+    color: #484d50;
+}
+
+.footer__text:nth-child(2) {
+    font-size: 11px;
+    color: #8a8b8d;
+}
+
+.footer__container {
+    padding: 22px 0px;
+}
+
+@media (max-width:425px) {
+    .footer__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__text {
+        display: none;
+    }
+}

@@ -1,0 +1,126 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner__img {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 0px 10px;
+}
+
+.banner__img__subtitle {
+    position: absolute;
+    bottom: 4px;
+    background-color: #404040;
+    color: white;
+    font-size: 3vw;
+    font-family: 'Bebas', sans-serif;
+    padding: 1.2vw 2vw 1.2vw;
+    font-weight: normal;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.banner__img__subtitle .banner__img__subtitle__label {
+    color: #9a9a9a;
+    font-size: 1.5vw;
+    display: block;
+}
+
+.banner__slider__list {
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+    top: -4px;
+    margin: 10px 10px 0px 0px;
+    padding: 0vw 2vw 0vw;
+    height: 100%;
+    background-color: #717171;
+}
+
+.banner__next {
+    color: white;
+    font-size: 2vw;
+    padding-top: 1vw;
+}
+
+.banner__text {
+    background-image: url('img/bg-banner-description.png');
+    background-repeat: repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 20px 10px;
+}
+
+.banner__text__title {
+    font-family: 'Bebas', sans-serif;
+    color: #474747;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: clamp(1.3vh, 1.3rem, 10vw);
+}
+
+.banner__text__title+p {
+    font-size: clamp(1.3vh, 0.74rem, 10vw);
+    font-family: 'HelveticaNeue', sans-serif;
+    margin-bottom: 0px;
+}
+
+
+@media (min-width: 992px) {
+    .banner__next {
+        display: none;
+    }
+
+    .banner__img__subtitle {
+        position: absolute;
+        bottom: 4px;
+        left: 10px;
+        background-color: #404040;
+        color: white;
+        font-size: 28px;
+        font-family: 'Bebas', sans-serif;
+        margin: 0px;
+        padding: 14px 17px 12px;
+        display: inline-block;
+        font-weight: normal;
+    }
+
+    .banner__img__subtitle .banner__img__subtitle__label {
+        color: #9a9a9a;
+        font-size: 14px;
+        display: block;
+    }
+
+
+    .banner__slider__list {
+        list-style-type: none;
+        top: inherit;
+        height: 0px;
+        bottom: 12px;
+        margin: 0px 15px 12px 0px;
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 12px;
+    }
+
+    .banner__slider__list__item {
+        background-color: white;
+        width: 23px;
+        height: 5px;
+        display: inline-block;
+    }
+
+    .banner__slider__list__item:not(:first-child) {
+        margin-left: 5px;
+    }
+
+    .banner__slider__list__item:first-child {
+        background-color: #444444;
+    }
+
+}
+

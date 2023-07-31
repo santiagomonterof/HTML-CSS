@@ -1,0 +1,142 @@
+.nav {
+    display: flex;
+    justify-content: end;
+    background-color: #1b1b1b;
+}
+
+.nav.active {
+    justify-content: start;
+}
+
+.nav__container__logo {
+    margin: 10px 20px 10px;
+}
+
+.nav__container__bar {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+
+}
+
+.nav__container__bar .nav__container__bar__button {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav__container__bar .nav__container__bar__button span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateY(-50%);
+
+}
+
+.nav__container__bar .nav__container__bar__button span:nth-child(1) {
+    top: 10%;
+}
+
+.nav__container__bar .nav__container__bar__button span:nth-child(2) {
+    top: 50%;
+}
+
+.nav__container__bar .nav__container__bar__button span:nth-child(3) {
+    top: 90%;
+}
+
+.nav__container__bar .nav__container__bar__links a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.nav__container__bar .nav__container__bar__links a.active,
+.nav__container__bar .nav__container__bar__links a:hover {
+    background: #222;
+    color: #00acee;
+}
+
+.nav__container__bar.active {
+    left: 0px;
+    z-index: 9999;
+}
+
+
+.nav__container__bar.active .nav__container__bar__button span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.nav__container__bar.active .nav__container__bar__button span:nth-child(2) {
+    display: none;
+}
+
+.nav__container__bar.active .nav__container__bar__button span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.nav__container__logo__helper {
+    display: none;
+}
+
+.nav__container__bar__links__active__lang {
+    display: none;
+}
+
+@media (min-width: 792px) {
+    .nav__container__bar__button {
+        display: none;
+    }
+
+    .nav__container__logo {
+        display: none;
+    }
+
+    .nav__container__bar {
+        position: inherit;
+        left: 0px;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav__container__bar__links {
+        display: flex;
+        margin: 22px;
+        padding: 0px;
+        text-decoration: none;
+        color: #f5f5f5;
+        border-bottom: 0px solid #1b1b1b;
+    }
+
+    .nav__container__logo__helper {
+        display: block;
+        width: 161px;
+        height: 45px;
+        margin: 22px;
+    }
+
+    .nav__container__bar__links__active__lang {
+        display: block;
+        background-color: #111111;
+        color: white;
+        border: 0px;
+        margin-left: 60px;
+
+    }
+
+}
